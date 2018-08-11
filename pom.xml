@@ -9,6 +9,13 @@
 		<module>ejb</module>
 	</modules>
 	
+	<scm>
+		<connection>scm:git:https://github.com/krzysztofkolcz/jee.git</connection>
+		<developerConnection>scm:git:git@github.com:krzysztofkolcz/jee.git</developerConnection>     
+		<tag>HEAD</tag>
+	</scm>
+	
+	
 	<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javaee.api.version>8.0</javaee.api.version>
