@@ -26,5 +26,9 @@
 	<modules>
 		<module>hello1</module>
     <module>guessnumber-jsf</module>
+    <module>guessnuber-jsf-002</module>
+    <module>jsf-template</module>
+    <module>composite-example-001</module>
+    <module>bookstore</module>
   </modules>
 </project>

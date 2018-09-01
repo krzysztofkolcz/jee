@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="../template.xhtml">
+
+    <ui:define name="top">
+    </ui:define> 
+    <ui:define name="content">
+			<h:outputText value="#{htmlTag.input}"/>
+			<br/>
+			<!--
+			<h:selectBooleanCheckbox id="booleanCheck" binding="#{htmlTag.booleanCheck}" />
+  -->
+			<!--
+			<br/>
+			<h:outputText id="booleanCheckText" value="#{htmlTag.booleanCheck}" />
+  -->
+
+			<br/>
+			<h:outputText id="shippingOption" value="#{htmlTag.shippingOption}" />
+			
+			<br/>
+			
+			<h:dataTable id="books" styleClass="table" value="#{htmlTag.items}" var="item">
+				<h:column>
+					<h:outputText value="${item}" />
+				</h:column>
+			</h:dataTable>
+			<br/>
+			<h:outputText value="#{msg.items}" rendered="#{!empty htmlTag.items}"/>
+			<ul>
+				<ui:repeat value="#{htmlTag.items}" var="item">
+					<li><h:outputText value="#{item}" /></li>
+				</ui:repeat>
+			</ul>
+	</ui:define>
+</ui:composition>
